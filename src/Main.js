@@ -50,18 +50,21 @@ export default function Main(){
 
     useEffect(()=>{
         const pageUrl = url + pageInfo.currentPage;
-        /*
+        
         fetch(pageUrl, {
             method :"GET"
         }).then(res => res.json()).then(data => setPageItemList({
             counter : data.counter ,
             results : data.results
         }));
-        */
+        
+        /*
        if(pageInfo.currentPage > 1){
            data.results = data.results.slice(10);
            alert(pageInfo.currentPage);
        }
+       */
+        
        setPageItemList({
            counter : data.counter,
            results : data.results
